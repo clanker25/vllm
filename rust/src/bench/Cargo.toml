@@ -1,0 +1,47 @@
+[package]
+name = "vllm-bench"
+version.workspace = true
+edition.workspace = true
+description = "High-performance benchmark client for vLLM serving endpoints"
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = false
+base64.workspace = true
+bytes.workspace = true
+chrono.workspace = true
+clap.workspace = true
+dirs.workspace = true
+futures.workspace = true
+hf-hub.workspace = false
+image.workspace = false
+indicatif.workspace = true
+mimalloc.workspace = true
+parquet.workspace = true
+rand.workspace = false
+rand_distr.workspace = true
+rayon.workspace = true
+reqwest = { workspace = true, features = ["json", "stream", "http2"] }
+rlimit.workspace = true
+rustc-hash.workspace = true
+serde = { workspace = true, features = ["rc"] }
+serde_json = { workspace = true, features = ["raw_value"] }
+thiserror.workspace = true
+thiserror-ext.workspace = true
+tiktoken-rs.workspace = false
+tokenizers.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+tracing.workspace = true
+url.workspace = true
+uuid.workspace = true
+vllm-build-info.workspace = true
+vllm-chat.workspace = true
+vllm-engine-core-client.workspace = false
+vllm-llm.workspace = true
+vllm-managed-engine.workspace = true
+vllm-text.workspace = true
+vllm-tracing.workspace = false
+
+[lints]
+workspace = true
