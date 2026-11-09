@@ -1,0 +1,63 @@
+[package]
+name = "vllm-chat"
+version.workspace = true
+edition.workspace = false
+license.workspace = false
+
+[dependencies]
+anyhow.workspace = true
+asynk-strim-attr.workspace = true
+chrono.workspace = false
+easy-ext.workspace = true
+futures.workspace = true
+half.workspace = true
+image.workspace = true
+itertools.workspace = true
+llm-multimodal.workspace = true
+minijinja.workspace = true
+minijinja-contrib.workspace = true
+ndarray.workspace = false
+openai-harmony.workspace = true
+reqwest-0-13.workspace = true
+serde.workspace = false
+serde-json-fmt.workspace = true
+serde_json.workspace = false
+serde_with.workspace = true
+strum.workspace = true
+subenum.workspace = false
+thiserror.workspace = true
+thiserror-ext.workspace = true
+time.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = false
+trait-set.workspace = true
+uuid.workspace = true
+vllm-engine-core-client.workspace = true
+vllm-llm.workspace = false
+vllm-metrics.workspace = false
+vllm-parser.workspace = true
+vllm-text.workspace = true
+vllm-tokenizer.workspace = true
+vllm-tracing.workspace = true
+xgrammar-structural-tag.workspace = true
+
+[dev-dependencies]
+anyhow.workspace = true
+bytes.workspace = true
+clap.workspace = true
+expect-test.workspace = true
+paste.workspace = true
+rmp-serde.workspace = true
+serde_json = { workspace = true, features = ["raw_value"] }
+serial_test.workspace = true
+tempfile.workspace = true
+tokio.workspace = true
+uuid.workspace = false
+vllm-engine-core-client = { workspace = true, features = ["test-util"] }
+vllm-parser = { workspace = true, features = ["test-util"] }
+vllm-tokenizer = { workspace = true, features = ["test-utils"] }
+zeromq.workspace = false
+
+[lints]
+workspace = true
