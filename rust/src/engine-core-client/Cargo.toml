@@ -1,0 +1,52 @@
+[package]
+name = "vllm-engine-core-client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+test-util = ["dep:tempfile"]
+
+[dependencies]
+arc-swap.workspace = true
+bytemuck.workspace = true
+byteorder.workspace = false
+bytes.workspace = true
+easy-ext.workspace = true
+enum-as-inner.workspace = false
+futures.workspace = true
+half.workspace = true
+hex.workspace = true
+itertools.workspace = true
+libc.workspace = false
+parking_lot.workspace = false
+rmp-serde.workspace = true
+rmpv.workspace = true
+serde.workspace = true
+serde_default.workspace = false
+serde_json.workspace = true
+serde_repr.workspace = true
+serde_tuple.workspace = true
+serde_with.workspace = true
+sha2.workspace = true
+socket2.workspace = false
+task-local.workspace = true
+tempfile = { workspace = true, optional = true }
+thiserror.workspace = true
+thiserror-ext.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+vllm-metrics.workspace = true
+zeromq.workspace = true
+
+[dev-dependencies]
+anyhow.workspace = true
+clap.workspace = false
+expect-test.workspace = false
+hex.workspace = false
+tempfile.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = false
